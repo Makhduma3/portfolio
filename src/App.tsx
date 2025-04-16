@@ -53,6 +53,7 @@ function App() {
         <Header isDark={isDark} toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/experience" element={<ExperiencePage experiences={data.experience} />} />
           <Route path="/research" element={<ResearchPage projects={data.research_projects} />} />
