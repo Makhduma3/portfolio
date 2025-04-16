@@ -1,0 +1,493 @@
+{
+    "experience": [
+        {
+            "category": "Research Experience",
+            "roles": [
+                {
+                    "title": "Postdoctoral Fellow",
+                    "organization": "University of Regina, Canada",
+                    "duration": "03/2025 – Present",
+                    "responsibilities": [
+                        "Researching cybersecurity defense using federated learning, explainable AI, and game theory.",
+                        "Collaborating on NSERC-DG and ADF grant proposals.",
+                        "Mentoring graduate students in cybersecurity."
+                    ]
+                },
+                {
+                    "title": "Ph.D. Researcher",
+                    "organization": "University of Regina, Canada",
+                    "duration": "04/2021 – 12/2024",
+                    "responsibilities": [
+                        "Developed IoT cybersecurity solutions for detecting and mitigating cyberattacks.",
+                        "Led a Mitacs-funded project on network security for Smart Talk Beacon Solutions Ltd.",
+                        "Guided a master's student in DDoS attack defense research."
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Teaching Experience",
+            "roles": [
+                {
+                    "title": "Sessional Lecturer",
+                    "organization": "University of Regina, Canada",
+                    "duration": "08/2021 - 12/2021",
+                    "responsibilities": [
+                        "Taught Digital Communications (ENEL 442) to undergraduate students."
+                    ]
+                },
+                {
+                    "title": "Graduate Teaching Assistant",
+                    "organization": "University of Regina, Canada",
+                    "duration": "2022 - 2024",
+                    "responsibilities": [
+                        "Conducted labs, tutorials, and assessments for multiple engineering courses."
+                    ]
+                },
+                {
+                    "title": "Assistant Professor",
+                    "organization": "Parul University, India",
+                    "duration": "06/2017 - 04/2021",
+                    "responsibilities": [
+                        "Taught courses in cybersecurity, networking, programming, and software engineering.",
+                        "Supervised final-year projects in IoT, security, and AI.",
+                        "Developed curriculum and facilitated workshops on emerging technologies.",
+                        "Led accreditation and international collaboration initiatives."
+                    ]
+                },
+                {
+                    "title": "Lecturer",
+                    "organization": "Parul University, India",
+                    "duration": "06/2011 - 05/2015",
+                    "responsibilities": [
+                        "Taught courses in software engineering and computer science."
+                    ]
+                },
+                {
+                    "title": "Lecturer",
+                    "organization": "Sigma Polytechnic Institute, India",
+                    "duration": "08/2008 - 11/2010",
+                    "responsibilities": [
+                        "Delivered IT courses and mentored students in academic and career growth."
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Industry Experience",
+            "roles": [
+                {
+                    "title": "Software Developer",
+                    "organization": "Virtua Private Solution, India",
+                    "duration": "12/2010 - 05/2011",
+                    "responsibilities": [
+                        "Developed inventory and HR management systems, improving operational efficiency.",
+                        "Built an interactive e-content website to enhance user experience."
+                    ]
+                }
+            ]
+        }
+    ],
+    "research_projects": [
+        {
+            "title": "Dynamic Network Management and Performance Optimization for Smart Talk Beacon’s Security Architecture",
+            "research_area": "Cybersecurity, Internet of Things (IoT) network, attack detection",
+            "tools": [
+                "Python (scripting)",
+                "Zeek (network analysis)",
+                "Wireshark (packet inspection)"
+            ],
+            "duration": "4 Months",
+            "organization": "Smart Talk Beacon, Canada",
+            "contributions": [
+                "Developed a dynamic cybersecurity network management system to optimize Smart Talk Beacon's performance.",
+                "Implemented advanced cybersecurity measures for IoT networks, focusing on attack detection.",
+                "Detected malicious network traffic, demonstrating the system's practical impact and efficacy in a live IoT environment."
+            ]
+        },
+        {
+            "title": "Multilevel Queue Model for Indian Region Broadcast Network (IRBN) over Satellite",
+            "research_area": "Satellite communication, Broadcasting, Queue scheduling",
+            "tools": [
+                "Java",
+                "Wireshark (traffic analysis)",
+                "SQL (database management)"
+            ],
+            "duration": "9 Months",
+            "organization": "Indian Space Research Organization (ISRO), India",
+            "contributions": [
+                "Developed a system for broadcasting data over satellite networks to support reliable communication in remote areas.",
+                "Implemented a multilevel queue model to efficiently manage scheduling and data transmissions, improving broadcast consistency by 40%.",
+                "Successfully broadcasted educational content to geographically challenging regions in India where cellular networks are unavailable, earning recognition from ISRO for advancing educational access."
+            ]
+        },
+        {
+            "title": "Enterprise Resource Management System",
+            "project_area": "Enterprise Resource Planning (ERP), Automation",
+            "tools": [
+                "C# (software development)",
+                "SQL (database integration)"
+            ],
+            "duration": "10 Months",
+            "organization": "ScubeTech Solution, India",
+            "contributions": [
+                "Developed comprehensive, user-friendly ERP software, integrating key organizational functions including inventory, purchasing, finance, and employee management, leading to a 25% increase in operational efficiency.",
+                "Ensured seamless project completion, meeting all functional requirements and receiving client recognition for delivering a robust ERP solution that optimized their enterprise operations."
+            ]
+        }
+    ],
+    "research_publications": {
+        "journal_papers": [
+            {
+                "authors": [
+                    "M. F. Saiyed",
+                    "I. Al-Anbagi",
+                    "M. Shamim Hossain"
+                ],
+                "title": "Interactive and Explainable Optimized Learning for DDoS Detection in Consumer IoT Networks",
+                "journal": "IEEE Transactions on Consumer Electronics",
+                "year": 2024,
+                "doi": "10.1109/TCE.2024.3482092"
+            },
+            {
+                "authors": [
+                    "M. F. Saiyed",
+                    "I. Al-Anbagi"
+                ],
+                "title": "Deep Ensemble Learning with Pruning for DDoS Attack Detection in IoT Networks",
+                "journal": "IEEE Transactions on Machine Learning in Communications and Networking",
+                "volume": 2,
+                "pages": "596-616",
+                "year": 2024,
+                "doi": "10.1109/TMLCN.2024.3395419"
+            },
+            {
+                "authors": [
+                    "M. F. Saiyed",
+                    "I. Al-Anbagi"
+                ],
+                "title": "A Genetic Algorithm- and t-Test-Based System for DDoS Attack Detection in IoT Networks",
+                "journal": "IEEE Access",
+                "volume": 12,
+                "pages": "25623-25641",
+                "year": 2024,
+                "doi": "10.1109/ACCESS.2024.3367357"
+            },
+            {
+                "authors": [
+                    "M. F. Saiyed",
+                    "I. Al-Anbagi"
+                ],
+                "title": "Flow and Unified Information-Based DDoS Attack Detection System for Multi-Topology IoT Networks",
+                "journal": "Internet of Things",
+                "year": 2023,
+                "volume": 24,
+                "pages": "100976"
+            },
+            {
+                "authors": [
+                    "M. F. Saiyed",
+                    "I. Al-Anbagi"
+                ],
+                "title": "SHAP-Based Explanation and Lightweight DDoS Attack Detection System in IoT Networks",
+                "journal": "Elsevier-Internet of Things",
+                "status": "Submitted"
+            },
+            {
+                "authors": [
+                    "M. F. Saiyed",
+                    "I. Al-Anbagi"
+                ],
+                "title": "A Game Theoretic Model for Strategic Defense Selection against DDoS Attacks in IoMT Networks",
+                "journal": "IEEE Transactions on Network and Service Management",
+                "status": "Submitted"
+            },
+            {
+                "authors": [
+                    "Avneet Kaur",
+                    "M. F. Saiyed",
+                    "I. Al-Anbagi",
+                    "M. Shamim Hossain"
+                ],
+                "title": "A QoS-Aware Adaptive Cross-layer Cyber-attack Detection Algorithm for Vehicular Networks",
+                "journal": "Elsevier-Vehicular Communications",
+                "status": "Submitted"
+            }
+        ],
+        "conference_papers": [
+            {
+                "authors": [
+                    "M. Saiyed",
+                    "I. Al-Anbagi"
+                ],
+                "title": "A Genetic Algorithm and Game-Theoretic Model for DDoS Defense in IoT Networks",
+                "conference": "2025 IEEE International Conference on Communications (ICC)",
+                "location": "Montreal, Canada",
+                "status": "Accepted"
+            },
+            {
+                "authors": [
+                    "M. Saiyed",
+                    "I. Al-Anbagi"
+                ],
+                "title": "A Lightweight and Optimal Defense System for DDoS Attacks in IoMT Networks",
+                "conference": "2024 IEEE Global Communications Conference (Globecom)",
+                "location": "Cape Town, South Africa",
+                "status": "Accepted",
+                "acceptance_date": "30 July 2024"
+            },
+            {
+                "authors": [
+                    "M. F. Saiyed",
+                    "I. Al-Anbagi"
+                ],
+                "title": "Optimized Ensemble Model with Genetic Algorithm for DDoS Attack Detection in IoT Networks",
+                "conference": "2024 IEEE International Conference on Communications Workshops (ICC Workshops)",
+                "location": "Denver, CO, USA",
+                "year": 2024,
+                "pages": "433-438",
+                "doi": "10.1109/ICCWorkshops59551.2024.10615607"
+            },
+            {
+                "authors": [
+                    "M. F. Saiyed",
+                    "I. Al-Anbagi"
+                ],
+                "title": "Entropy and Divergence-based DDoS Attack Detection System in IoT Networks",
+                "conference": "2023 19th International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob)",
+                "year": 2023,
+                "pages": "224-230"
+            },
+            {
+                "authors": [
+                    "A. S. Rathor",
+                    "K. Modi",
+                    "M. Saiyad"
+                ],
+                "title": "A Comprehensive Survey on Emotion-Based Health Prediction Using Internet of Things and Machine Learning",
+                "conference": "Second International Conference on Information Management and Machine Intelligence (ICIMMI 2020)",
+                "year": 2021,
+                "pages": "173-182",
+                "publisher": "Springer Singapore"
+            },
+            {
+                "authors": [
+                    "J. Patel",
+                    "B. Vala",
+                    "M. Saiyad"
+                ],
+                "title": "LSTM-RNN Combined Approach for Crop Yield Prediction on Climatic Constraints",
+                "conference": "2021 5th International Conference on Computing Methodologies and Communication (ICCMC)",
+                "year": 2021,
+                "pages": "1477-1483"
+            },
+            {
+                "authors": [
+                    "A. Chouhan",
+                    "A. Kumari",
+                    "M. Saiyad"
+                ],
+                "title": "Secure Multiparty Computation and Privacy Preserving Scheme Using Homomorphic Elliptic Curve Cryptography",
+                "conference": "2019 International Conference on Intelligent Computing and Control Systems (ICCS)",
+                "location": "Madurai, India",
+                "year": 2019,
+                "pages": "776-780",
+                "doi": "10.1109/ICCS45141.2019.9065645"
+            },
+            {
+                "authors": [
+                    "F. S. Makhduma",
+                    "S. Agrawal",
+                    "C. A. Patel"
+                ],
+                "title": "Multilevel Queue Model for Indian Region Broadcast Network (IRBN) over Satellite",
+                "conference": "2017 International Conference on Intelligent Computing and Control Systems (ICICCS)",
+                "location": "Madurai, India",
+                "year": 2017,
+                "pages": "145-148",
+                "doi": "10.1109/ICCONS.2017.8250698"
+            },
+            {
+                "authors": [
+                    "F. S. Makhduma",
+                    "C. A. Patel",
+                    "S. Agrawal"
+                ],
+                "title": "OUTERNET: Crossing Over Data Gap Using CubeSats",
+                "conference": "2017 International Conference on Inventive Systems and Control (ICISC)",
+                "location": "Coimbatore, India",
+                "year": 2017,
+                "pages": "1-4",
+                "doi": "10.1109/ICISC.2017.8068587"
+            }
+        ]
+    },
+    "funding_and_awards": [
+        {
+            "award": "FGSR Graduate Student Online Conference or Travel Award",
+            "year": 2024,
+            "term": "Fall",
+            "institution": "University of Regina, Canada",
+            "amount": "$1000"
+        },
+        {
+            "award": "International Doctoral Student Award",
+            "year": 2024,
+            "term": "Fall",
+            "institution": "University of Regina, Canada",
+            "amount": "$1400"
+        },
+        {
+            "award": "Dean Honour Award",
+            "year": 2024,
+            "term": "Spring/Summer",
+            "institution": "University of Regina, Canada"
+        },
+        {
+            "award": "UR Graduate Scholarship",
+            "year": 2024,
+            "term": "Spring/Summer",
+            "institution": "University of Regina, Canada",
+            "amount": "$2890"
+        },
+        {
+            "award": "International Doctoral Student Award",
+            "year": 2024,
+            "term": "Spring/Summer",
+            "institution": "University of Regina, Canada",
+            "amount": "$1400"
+        },
+        {
+            "award": "Faculty of Graduate Studies and Research Thesis Only Scholarship",
+            "year": 2024,
+            "term": "Spring/Summer",
+            "institution": "University of Regina, Canada",
+            "amount": "$8425"
+        },
+        {
+            "award": "International Doctoral Student Award",
+            "year": 2024,
+            "term": "Winter",
+            "institution": "University of Regina, Canada",
+            "amount": "$1400"
+        },
+        {
+            "award": "Faculty of Graduate Studies and Research Thesis Only Scholarship",
+            "year": 2024,
+            "term": "Winter",
+            "institution": "University of Regina, Canada",
+            "amount": "$675"
+        },
+        {
+            "award": "URGSA Travel Awards",
+            "year": 2023,
+            "term": "Fall",
+            "institution": "University of Regina, Canada",
+            "amount": "$750"
+        },
+        {
+            "award": "Saskatchewan Innovation and Excellence Graduate Scholarship",
+            "year": 2023,
+            "term": "Fall",
+            "institution": "University of Regina, Canada",
+            "amount": "$3000"
+        },
+        {
+            "award": "Faculty of Graduate Studies and Research Thesis Only Scholarship",
+            "year": 2023,
+            "term": "Fall",
+            "institution": "University of Regina, Canada",
+            "amount": "$3222"
+        },
+        {
+            "award": "MITACS Accelerate",
+            "project": "Dynamic Network Management and Performance Optimization for Smart Talk Beacon’s security architecture",
+            "year": 2021,
+            "term": "Fall",
+            "institution": "University of Regina, Canada",
+            "amount": "$15,000"
+        },
+        {
+            "award": "FGSR Women in STEM Scholarship",
+            "year": 2021,
+            "term": "Spring/Summer",
+            "institution": "University of Regina, Canada",
+            "amount": "$5000"
+        },
+        {
+            "award": "FGSR Women in STEM Entrance Scholarship",
+            "year": 2021,
+            "term": "Fall",
+            "institution": "University of Regina, Canada",
+            "amount": "$5000"
+        },
+        {
+            "award": "Travel Grant",
+            "program": "International Summer School Program",
+            "year": 2020,
+            "term": "Winter",
+            "institution": "Wroclaw University of Science & Technology, Wroclaw, Poland",
+            "granting_institution": "Parul University",
+            "amount": "INR 3,75,000"
+        },
+        {
+            "award": "Travel Grant",
+            "program": "International Summer School Program",
+            "year": 2019,
+            "term": "Winter",
+            "institution": "Carleton University, Canada",
+            "granting_institution": "Parul University",
+            "amount": "INR 4,25,000"
+        },
+        {
+            "award": "Best Faculty Award",
+            "year": 2019,
+            "institution": "Parul University",
+            "amount": "INR 10,000"
+        }
+    ],
+    "educational_qualification": [
+        {
+            "degree": "Doctor of Philosophy",
+            "field": "Electronic Systems Engineering",
+            "institution": "University of Regina, SK, Canada",
+            "year": 2025,
+            "gpa": 4,
+            "thesis_title": "Adaptive Systems for Distributed Denial of Service Attacks Detection and Mitigation in IoT Networks",
+            "supervisor": {
+                "name": "Dr. Irfan Al-Anbagi",
+                "designation": "Associate Professor",
+                "department": "Electronic Systems Engineering",
+                "institution": "University of Regina"
+            }
+        },
+        {
+            "degree": "Master of Engineering (Thesis-based)",
+            "field": "Computer Engineering",
+            "institution": "Gujarat Technological University, India",
+            "year": 2017,
+            "gpa": 3.98,
+            "thesis_title": "Multilevel Queue Model for Indian Region Broadcast Network over Satellite",
+            "supervisors": [
+                {
+                    "name": "Dr. Chirag Patel",
+                    "designation": "Associate Professor",
+                    "department": "Information Technology",
+                    "institution": "Gujarat Technological University"
+                },
+                {
+                    "name": "Mr. Sudhir Agarwal",
+                    "designation": "Head, Department of Communication",
+                    "institution": "Indian Space Research Organization (ISRO)"
+                }
+            ]
+        },
+        {
+            "degree": "Bachelor of Engineering",
+            "field": "Computer Engineering",
+            "institution": "Gujarat University, India",
+            "year": 2008,
+            "gpa": 3.03
+        }
+    ]
+}

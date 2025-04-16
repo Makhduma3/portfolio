@@ -29,7 +29,7 @@ function App() {
   }, [isDark]);
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch(`${import.meta.env.BASE_URL}data.json`)
       .then(response => response.json())
       .then(jsonData => setData(jsonData))
       .catch(error => console.error('Error loading data:', error));
