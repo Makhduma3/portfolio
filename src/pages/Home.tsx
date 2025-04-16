@@ -25,7 +25,7 @@ export default function Home() {
               className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-blue-500/50 shadow-[0_0_30px_rgba(59,130,246,0.5)]"
             >
               <img
-                src="website-pic.jpg"
+                src={`${import.meta.env.BASE_URL}website-pic.jpg`}
                 alt="Makhduma Saiyed"
                 className="object-cover -ml-2"
               />
