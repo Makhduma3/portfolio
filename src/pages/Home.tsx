@@ -38,7 +38,7 @@ export default function Home() {
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Makhduma Saiyed
+            Makhduma Saiyed (Ph.D., EIT, GSMIEEE)
           </motion.h1>
 
           <motion.div
