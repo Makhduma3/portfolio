@@ -50,16 +50,16 @@ export default function Home() {
               Cybersecurity Researcher & IoT Specialist
             </p>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12">
-              Postdoctoral Fellow at University of Regina, advancing the frontiers of IoT security
-              through innovative research in machine learning and cybersecurity defense mechanisms.
+              Assistant Professor at Trent University.
             </p>
           </motion.div>
 
           <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12">
             {[
+              { icon: Shield, text: "Artificial Intelligence" },
               { icon: Shield, text: "Cybersecurity" },
-              { icon: Cpu, text: "IoT Systems" },
-              { icon: Brain, text: "Machine Learning" }
+              { icon: Cpu, text: "IoT Networks" },
+              { icon: Brain, text: "Explainable AI" }
             ].map((item, index) => (
               <motion.div
                 key={index}
