@@ -101,7 +101,7 @@ export default function About() {
                   My research focuses on AI-driven cybersecurity, particularly
                   in IoT and distributed systems. I work on intent-aware
                   detection, federated learning, and lightweight LLM-based
-                  reasoning to design scalable and practical defense systems
+                  reasoning to design scalable and practical defence systems
                   for modern network environments.
                 </p>
               </div>
