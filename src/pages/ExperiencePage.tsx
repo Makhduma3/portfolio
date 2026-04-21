@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import { Briefcase, GraduationCap, Users, Building2 } from 'lucide-react';
+import { GraduationCap, Users, Building2 } from 'lucide-react';
 import type { Experience } from '../types';
 import ParticlesBackground from '../components/ParticlesBackground';
 
@@ -12,23 +10,20 @@ interface ExperienceProps {
 export default function Experience({ experiences }: ExperienceProps) {
   const categories = [
     {
-      title: "Research Experience",
-      icon: GraduationCap,
-      color: "#3B82F6",
-      roles: experiences.find(exp => exp.category === "Research Experience")?.roles || []
-    },
-    {
-      title: "Teaching Experience",
+      title: 'Teaching Experience',
       icon: Users,
-      color: "#10B981",
-      roles: experiences.find(exp => exp.category === "Teaching Experience")?.roles || []
+      key: 'Teaching Experience',
     },
     {
-      title: "Industry Experience",
+      title: 'Research Experience',
+      icon: GraduationCap,
+      key: 'Research Experience',
+    },
+    {
+      title: 'Industry Experience',
       icon: Building2,
-      color: "#6366F1",
-      roles: experiences.find(exp => exp.category === "Industry Experience")?.roles || []
-    }
+      key: 'Industry Experience',
+    },
   ];
 
   return (
@@ -37,80 +32,107 @@ export default function Experience({ experiences }: ExperienceProps) {
         <ParticlesBackground />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 max-w-4xl">
+
+        {/* Page heading */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-14"
         >
-          <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
-            Professional Journey
+          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+            Experience
           </h2>
-          <p className="text-lg text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A comprehensive overview of my academic, research, and industry experience.
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+            Academic, research, and industry background.
           </p>
         </motion.div>
 
-        {categories.map((category, categoryIndex) => (
-          <div key={categoryIndex} className="mb-16 last:mb-0">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="flex items-center gap-3 mb-8"
-            >
-              <div className="p-3 rounded-xl" style={{ backgroundColor: category.color }}>
-                <category.icon className="w-6 h-6 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                {category.title}
-              </h3>
-            </motion.div>
+        {/* Categories */}
+        <div className="space-y-14">
+          {categories.map((category, categoryIndex) => {
+            const Icon = category.icon;
+            const roles =
+              experiences.find((exp) => exp.category === category.key)?.roles || [];
 
-            <VerticalTimeline animate={true}>
-              {category.roles.map((role, roleIndex) => (
-                <VerticalTimelineElement
-                  key={roleIndex}
-                  className="vertical-timeline-element"
-                  contentStyle={{
-                    background: 'var(--bg-color)',
-                    color: 'var(--text-color)',
-                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                    border: '1px solid var(--border-color)',
-                    borderRadius: '0.75rem',
-                    padding: '1.5rem',
-                  }}
-                  contentArrowStyle={{ borderRight: '7px solid var(--border-color)' }}
-                  date={role.duration}
-                  iconStyle={{
-                    background: category.color,
-                    color: '#fff',
-                    boxShadow: `0 0 0 4px ${category.color}40`,
-                  }}
-                  icon={<category.icon />}
-                  position={roleIndex % 2 === 0 ? 'left' : 'right'}
-                >
-                  <h3 className="text-xl font-bold mb-1 text-gray-900 dark:text-white">
-                    {role.title}
+            if (roles.length === 0) return null;
+
+            return (
+              <motion.div
+                key={categoryIndex}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: categoryIndex * 0.05 }}
+                viewport={{ once: true }}
+              >
+                {/* Category label */}
+                <div className="flex items-center gap-2 mb-5">
+                  <div className="p-1.5 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                    <Icon className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+                  </div>
+                  <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500">
+                    {category.title}
                   </h3>
-                  <h4 className="text-lg font-semibold mb-2 text-blue-600 dark:text-blue-400">
-                    {role.organization}
-                  </h4>
-                  <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
-                    {role.responsibilities.map((resp, index) => (
-                      <li key={index} className="text-base">
-                        {resp}
-                      </li>
-                    ))}
-                  </ul>
-                </VerticalTimelineElement>
-              ))}
-            </VerticalTimeline>
-          </div>
-        ))}
+                </div>
+
+                {/* Role cards */}
+                <div className="space-y-4 border-l border-gray-200 dark:border-gray-700 pl-6 ml-3">
+                  {roles.map((role, roleIndex) => (
+                    <motion.div
+                      key={roleIndex}
+                      initial={{ opacity: 0, y: 12 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: roleIndex * 0.06 }}
+                      viewport={{ once: true }}
+                      className="relative"
+                    >
+                      {/* Timeline dot */}
+                      <span className="absolute -left-[1.65rem] top-4 w-2 h-2 rounded-full bg-gray-300 dark:bg-gray-600 border-2 border-white dark:border-gray-900" />
+
+                      {/* Card */}
+                      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-5">
+
+                        {/* Header */}
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
+                          <div>
+                            <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
+                              {role.title}
+                            </h4>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
+                              {role.organization}
+                            </p>
+                          </div>
+                          <span className="text-xs text-gray-400 dark:text-gray-500 shrink-0 sm:text-right mt-0.5">
+                            {role.duration}
+                          </span>
+                        </div>
+
+                        {/* Responsibilities */}
+                        {role.responsibilities && role.responsibilities.length > 0 && (
+                          <ul className="space-y-1.5 mt-3 border-t border-gray-100 dark:border-gray-700 pt-3">
+                            {role.responsibilities.map((resp, i) => (
+                              <li
+                                key={i}
+                                className="text-sm text-gray-600 dark:text-gray-300 flex gap-2"
+                              >
+                                <span className="mt-1.5 w-1 h-1 rounded-full bg-gray-400 dark:bg-gray-500 shrink-0" />
+                                {resp}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
       </div>
     </section>
   );
