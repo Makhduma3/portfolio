@@ -52,9 +52,9 @@ function App() {
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
         <Header isDark={isDark} toggleDarkMode={toggleDarkMode} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Home />} />
-          <Route path="/about" element={<AboutPage />} />
+          
+          <Route path="/" element={<AboutPage />} />
+          <Route path="/portfolio" element={<AboutPage />} />
           <Route path="/experience" element={<ExperiencePage experiences={data.experience} />} />
           <Route path="/research" element={<ResearchPage projects={data.research_projects} />} />
           <Route path="/publications" element={<PublicationsPage publications={data.research_publications} />} />
