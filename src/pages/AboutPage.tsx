@@ -84,7 +84,7 @@ export default function About() {
             >
               <div className="mb-10">
                 <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                  Faculty Profile
+                  
                 </p>
 
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
