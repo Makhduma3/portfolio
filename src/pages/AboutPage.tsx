@@ -74,7 +74,7 @@ export default function About() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-16">
 
-            {/* ───────── LEFT COLUMN ───────── */}
+            {/* LEFT COLUMN */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -133,16 +133,16 @@ export default function About() {
               <DocumentButtons />
             </motion.div>
 
-            {/* ───────── RIGHT COLUMN ───────── */}
+            {/* RIGHT COLUMN */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
-              className="lg:w-3/5 space-y-10"
+              className="lg:w-3/5 space-y-12"
             >
 
-              {/* Expertise FIRST */}
+              {/* 1. Areas of Expertise FIRST */}
               <div>
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   Areas of Expertise
@@ -169,7 +169,7 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Stats LAST */}
+              {/* 2. Stats LAST */}
               <div>
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   Summary
