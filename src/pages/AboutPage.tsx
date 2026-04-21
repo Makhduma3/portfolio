@@ -4,13 +4,6 @@ import {
   Cpu,
   Brain,
   School,
-  Award,
-  Users,
-  BookOpen,
-  Globe,
-  Zap,
-  Trophy,
-  Rocket,
   MapPin,
 } from 'lucide-react';
 import DocumentButtons from '../components/DocumentButtons';
@@ -71,24 +64,6 @@ export default function About() {
     { value: '5', label: 'Countries' },
   ];
 
-  const achievements = [
-    {
-      title: 'Research Contributions',
-      description:
-        'Published research in IEEE venues focusing on IoT security and DDoS defense.',
-    },
-    {
-      title: 'Academic Excellence',
-      description:
-        'Consistent academic performance with strong research output during doctoral studies.',
-    },
-    {
-      title: 'Collaborative Projects',
-      description:
-        'Worked on interdisciplinary and international research collaborations.',
-    },
-  ];
-
   return (
     <div className="bg-white dark:bg-gray-900 relative">
       <div className="absolute inset-0 pointer-events-none">
@@ -107,7 +82,6 @@ export default function About() {
               viewport={{ once: true }}
               className="lg:w-2/5 lg:sticky lg:top-24"
             >
-              {/* Identity */}
               <div className="mb-10">
                 <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
                   Faculty Profile
@@ -132,7 +106,6 @@ export default function About() {
                 </p>
               </div>
 
-              {/* Position */}
               <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5 mb-8">
                 <div className="flex items-start gap-3">
                   <School className="w-5 h-5 text-gray-700 dark:text-gray-300 mt-1" />
@@ -169,44 +142,7 @@ export default function About() {
               className="lg:w-3/5 space-y-10"
             >
 
-              {/* Stats */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                {stats.map((stat, index) => (
-                  <div
-                    key={index}
-                    className="border border-gray-200 dark:border-gray-700 rounded-md p-4 text-center"
-                  >
-                    <div className="text-xl font-semibold text-gray-900 dark:text-white">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs text-gray-500 mt-1">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Achievements */}
-              <div>
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                  Research Highlights
-                </h2>
-
-                <div className="space-y-4">
-                  {achievements.map((item, index) => (
-                    <div key={index} className="border-l-2 border-gray-300 pl-4">
-                      <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
-                        {item.title}
-                      </h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
-                        {item.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Expertise */}
+              {/* Expertise FIRST */}
               <div>
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   Areas of Expertise
@@ -228,6 +164,29 @@ export default function About() {
                           <li key={i}>{a}</li>
                         ))}
                       </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Stats LAST */}
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  Summary
+                </h2>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  {stats.map((stat, index) => (
+                    <div
+                      key={index}
+                      className="border border-gray-200 dark:border-gray-700 rounded-md p-4 text-center"
+                    >
+                      <div className="text-xl font-semibold text-gray-900 dark:text-white">
+                        {stat.value}
+                      </div>
+                      <div className="text-xs text-gray-500 mt-1">
+                        {stat.label}
+                      </div>
                     </div>
                   ))}
                 </div>
