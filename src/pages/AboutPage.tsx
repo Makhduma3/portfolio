@@ -182,22 +182,7 @@ export default function About() {
                 </div>
               </div>
 
-              {/* STATS (NO TITLE) */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                {stats.map((stat, index) => (
-                  <div
-                    key={index}
-                    className="border border-gray-200 dark:border-gray-700 rounded-md p-4 text-center"
-                  >
-                    <div className="text-xl font-semibold text-gray-900 dark:text-white">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs text-gray-500 mt-1">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
+              
 
             </motion.div>
 
