@@ -82,55 +82,65 @@ export default function About() {
               viewport={{ once: true }}
               className="lg:w-2/5 lg:sticky lg:top-24"
             >
-              <div className="mb-10">
-                <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                  
-                </p>
+              <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm">
 
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-                  Dr. Makhduma Saiyed
-                </h1>
+                {/* PROFILE IMAGE */}
+                <div className="flex justify-center mb-6">
+                  <img
+                    src={`${import.meta.env.BASE_URL}website-pic.jpg`}
+                    alt="Makhduma Saiyed"
+                    className="w-40 h-40 object-cover rounded-xl border border-gray-200 shadow-sm"
+                  />
+                </div>
 
-                <p className="text-lg text-gray-700 dark:text-gray-300 mt-2">
-                  Assistant Professor, Computer Science
-                </p>
+                {/* NAME */}
+                <div className="text-center mb-6">
+                  <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+                    Dr. Makhduma Saiyed
+                  </h1>
 
-                <div className="w-12 h-[2px] bg-gray-300 my-6" />
+                  <p className="text-gray-600 dark:text-gray-300 mt-1">
+                    Assistant Professor
+                  </p>
 
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  <p className="text-sm text-gray-500">
+                    Computer Science
+                  </p>
+                </div>
+
+                {/* BIO */}
+                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-center mb-6">
                   My research focuses on AI-driven cybersecurity, particularly
                   in IoT and distributed systems. I work on intent-aware
                   detection, federated learning, and lightweight LLM-based
-                  reasoning to design scalable and practical defence systems
-                  for modern network environments.
+                  reasoning to design scalable and practical defense systems.
                 </p>
-              </div>
 
-              <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5 mb-8">
-                <div className="flex items-start gap-3">
-                  <School className="w-5 h-5 text-gray-700 dark:text-gray-300 mt-1" />
-                  <div>
-                    <p className="text-sm text-gray-500">
-                      July 2025 – Present
-                    </p>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">
-                      Assistant Professor
-                    </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">
-                      Department of Computer Science
-                    </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-300">
-                      Trent University
-                    </p>
-                    <p className="text-sm text-gray-500 flex items-center gap-1 mt-1">
-                      <MapPin className="w-4 h-4" />
-                      Oshawa, Ontario, Canada
-                    </p>
+                {/* POSITION */}
+                <div className="border-t pt-4">
+                  <div className="flex items-start gap-3">
+                    <School className="w-5 h-5 text-gray-600 mt-1" />
+                    <div>
+                      <p className="text-sm text-gray-500">
+                        July 2025 – Present
+                      </p>
+                      <p className="text-sm font-medium text-gray-900 dark:text-white">
+                        Trent University
+                      </p>
+                      <p className="text-xs text-gray-500 flex items-center gap-1">
+                        <MapPin className="w-3 h-3" />
+                        Oshawa, Canada
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <DocumentButtons />
+                {/* BUTTONS */}
+                <div className="mt-6">
+                  <DocumentButtons />
+                </div>
+
+              </div>
             </motion.div>
 
             {/* RIGHT COLUMN */}
@@ -142,15 +152,18 @@ export default function About() {
               className="lg:w-3/5 space-y-12"
             >
 
-              {/* Areas of Expertise */}
+              {/* AREAS OF EXPERTISE */}
               <div>
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   Areas of Expertise
                 </h2>
 
-                <div className="space-y-6">
+                <div className="space-y-8">
                   {expertise.map((item, index) => (
-                    <div key={index}>
+                    <div
+                      key={index}
+                      className="border-b border-gray-200 dark:border-gray-700 pb-4"
+                    >
                       <h3 className="text-md font-semibold text-gray-900 dark:text-white">
                         {item.title}
                       </h3>
@@ -159,7 +172,7 @@ export default function About() {
                         {item.description}
                       </p>
 
-                      <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300">
+                      <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300 space-y-1">
                         {item.achievements.map((a, i) => (
                           <li key={i}>{a}</li>
                         ))}
@@ -169,7 +182,7 @@ export default function About() {
                 </div>
               </div>
 
-              {/* Stats ONLY (no heading) */}
+              {/* STATS (NO TITLE) */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {stats.map((stat, index) => (
                   <div
