@@ -22,29 +22,32 @@ export default function About() {
       icon: Shield,
       title: 'Cybersecurity',
       description:
-        'Specialized in DDoS attack detection and defense mechanisms for IoT networks.',
+        'Specialized in DDoS attack detection and defence mechanisms for IoT networks.',
       achievements: [
-        '15+ Research Papers',
-        'Multiple IEEE Publications',
-        'Industry Collaborations',
+         'DDoS Detection & Mitigation',
+        'Game-Theoretic Defence Models',
+        'Explainable AI for Security',
       ],
     },
     {
       icon: Cpu,
       title: 'IoT Systems',
       description:
-        'Expert in developing secure IoT architectures and network optimization.',
-      achievements: ['IoT Security Frameworks', 'Network Optimization'],
+        'Design and deployment of secure IoT testbed environments for modeling real-world network behavior and attack scenarios.',
+      achievements: [ 'Edge IoT Testbed Development',
+        'Traffic Monitoring (Zeek, Packet Analysis)',
+        'Sensor & Device-Level Modelling'],
     },
     {
       icon: Brain,
-      title: 'Machine Learning',
+      title: 'AI for Security',
       description:
-        'Applied AI/ML techniques for network security and attack detection.',
+        'Development of intelligent and scalable security models using machine learning, federated learning, and lightweight LLM-assisted reasoning.',
       achievements: [
-        'Deep Learning Models',
-        'Real-time Detection',
-        'Adaptive Systems',
+        'Federated Learning Models',
+        'Intent-Aware Detection Systems',
+        'Lightweight LLM Integration',
+        'Real-Time Anomaly Detection',
       ],
     },
     {
@@ -52,9 +55,9 @@ export default function About() {
       title: 'Academia',
       description: 'Extensive experience in teaching and research mentorship.',
       achievements: [
-        '100+ Students Mentored',
-        'Curriculum Development',
-        'Research Supervision',
+        'Graduate & Undergraduate Mentorship',
+        'Course Development (AI & Security)',
+        'Research Supervision & Collaboration',
       ],
     },
   ];
@@ -62,8 +65,8 @@ export default function About() {
   const stats = [
     { icon: BookOpen, value: '15+', label: 'Research Papers' },
     { icon: Award, value: '10+', label: 'Awards' },
-    { icon: Users, value: '100+', label: 'Students Mentored' },
-    { icon: Globe, value: '3', label: 'Countries' },
+    { icon: Users, value: '50+', label: 'Students Mentored' },
+    { icon: Globe, value: '5', label: 'Countries' },
   ];
 
   const achievements = [
@@ -89,12 +92,12 @@ export default function About() {
 
   const highlights = [
     {
-      year: 'March 2025 - Present',
-      title: 'Postdoctoral Fellow',
-      description: `Faculty of Engineering and Applied Science, University of Regina \n 737 Wascana Parkway, Regina, SK S4S 0A2`,
+      year: 'July 2025 - Present',
+      title: 'Assistant Professor',
+      description: `Department of Computer Science, Trent University \n Oshawa, Ontario, ON,
 
       achievements: [
-        // 'Developed novel defense mechanisms',
+        // 'Developed novel defence mechanisms',
         // 'Published in top-tier journals',
         // 'Received multiple academic awards',
       ],
@@ -145,11 +148,9 @@ export default function About() {
             </h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                As a Postdoctoral Fellow at the University of Regina, I am at
-                the forefront of cybersecurity research, specializing in IoT
-                security and advanced defense mechanisms. My work combines
-                cutting-edge machine learning techniques with robust security
-                frameworks to protect critical infrastructure and smart systems.
+                As an Assistant Professor, I work in AI-driven cybersecurity, with a focus on IoT and distributed systems. 
+                My research investigates intent-aware detection, federated learning, and lightweight LLM-based analysis to understand and defend against complex cyber threats. 
+                I aim to build intelligent, scalable, and real-world security frameworks for next-generation smart and connected systems.
               </p>
               <DocumentButtons />
             </div>
