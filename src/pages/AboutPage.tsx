@@ -12,7 +12,6 @@ import {
   Trophy,
   Rocket,
   MapPin,
-  Mail,
 } from 'lucide-react';
 import DocumentButtons from '../components/DocumentButtons';
 import ParticlesBackground from '../components/ParticlesBackground';
@@ -23,7 +22,7 @@ export default function About() {
       icon: Shield,
       title: 'Cybersecurity',
       description:
-        'Specialized in DDoS attack detection and defence mechanisms for IoT networks.',
+        'DDoS attack detection and mitigation for IoT environments.',
       achievements: [
         'DDoS Detection & Mitigation',
         'Game-Theoretic Defence Models',
@@ -34,62 +33,59 @@ export default function About() {
       icon: Cpu,
       title: 'IoT Systems',
       description:
-        'Design and deployment of secure IoT testbed environments for modeling real-world network behavior and attack scenarios.',
+        'Design of secure IoT testbeds and real-world network modeling.',
       achievements: [
         'Edge IoT Testbed Development',
-        'Traffic Monitoring (Zeek, Packet Analysis)',
-        'Sensor & Device-Level Modelling',
+        'Traffic Monitoring (Zeek)',
+        'Device-Level Behaviour Modelling',
       ],
     },
     {
       icon: Brain,
       title: 'AI for Security',
       description:
-        'Development of intelligent and scalable security models using machine learning, federated learning, and lightweight LLM-assisted reasoning.',
+        'Machine learning, federated learning, and lightweight LLM-based security systems.',
       achievements: [
         'Federated Learning Models',
-        'Intent-Aware Detection Systems',
-        'Lightweight LLM Integration',
+        'Intent-Aware Detection',
         'Real-Time Anomaly Detection',
       ],
     },
     {
       icon: School,
       title: 'Academia',
-      description: 'Extensive experience in teaching and research mentorship.',
+      description:
+        'Teaching, mentoring, and curriculum development in AI and cybersecurity.',
       achievements: [
         'Graduate & Undergraduate Mentorship',
-        'Course Development (AI & Security)',
-        'Research Supervision & Collaboration',
+        'Course Development',
+        'Research Supervision',
       ],
     },
   ];
 
   const stats = [
-    { icon: BookOpen, value: '15+', label: 'Research Papers' },
-    { icon: Award, value: '10+', label: 'Awards' },
-    { icon: Users, value: '50+', label: 'Students Mentored' },
-    { icon: Globe, value: '5', label: 'Countries' },
+    { value: '15+', label: 'Publications' },
+    { value: '10+', label: 'Awards' },
+    { value: '50+', label: 'Students Mentored' },
+    { value: '5', label: 'Countries' },
   ];
 
   const achievements = [
     {
-      icon: Zap,
-      title: 'Research Impact',
+      title: 'Research Contributions',
       description:
-        'Published groundbreaking research in top-tier IEEE journals, advancing the field of IoT security.',
+        'Published research in IEEE venues focusing on IoT security and DDoS defense.',
     },
     {
-      icon: Trophy,
       title: 'Academic Excellence',
       description:
-        'Maintained a perfect 4.0 GPA throughout Ph.D. studies while conducting cutting-edge research.',
+        'Consistent academic performance with strong research output during doctoral studies.',
     },
     {
-      icon: Rocket,
-      title: 'Innovation Leadership',
+      title: 'Collaborative Projects',
       description:
-        'Led multiple successful research projects with international collaborations.',
+        'Worked on interdisciplinary and international research collaborations.',
     },
   ];
 
@@ -99,176 +95,146 @@ export default function About() {
         <ParticlesBackground />
       </div>
 
-      {/* ── Hero / Two-Column Section ── */}
-      <section className="py-24 relative">
+      <section className="py-20">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-16 items-start">
+          <div className="flex flex-col lg:flex-row gap-16">
 
-            {/* ── LEFT COLUMN: Identity ── */}
+            {/* ───────── LEFT COLUMN ───────── */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.7 }}
               viewport={{ once: true }}
               className="lg:w-2/5 lg:sticky lg:top-24"
             >
-              {/* Name & Title */}
-              <div className="mb-8">
-                <p className="text-sm font-semibold tracking-widest text-blue-600 dark:text-blue-400 uppercase mb-3">
+              {/* Identity */}
+              <div className="mb-10">
+                <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
                   Faculty Profile
                 </p>
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
-                  About Me
+
+                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                  Dr. Makhduma Saiyed
                 </h1>
-                <div className="w-16 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-6" />
-                <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                  As an Assistant Professor, I work in AI-driven cybersecurity,
-                  with a focus on IoT and distributed systems. My research
-                  investigates intent-aware detection, federated learning, and
-                  lightweight LLM-based analysis to understand and defend
-                  against complex cyber threats. I aim to build intelligent,
-                  scalable, and real-world security frameworks for
-                  next-generation smart and connected systems.
+
+                <p className="text-lg text-gray-700 dark:text-gray-300 mt-2">
+                  Assistant Professor, Computer Science
+                </p>
+
+                <div className="w-12 h-[2px] bg-gray-300 my-6" />
+
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  My research focuses on AI-driven cybersecurity, particularly
+                  in IoT and distributed systems. I work on intent-aware
+                  detection, federated learning, and lightweight LLM-based
+                  reasoning to design scalable and practical defense systems
+                  for modern network environments.
                 </p>
               </div>
 
-              {/* Current Designation Card */}
-              <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-6 mb-8 border border-blue-100 dark:border-gray-600">
-                <div className="flex items-start gap-3 mb-4">
-                  <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl shrink-0">
-                    <School className="w-5 h-5 text-white" />
-                  </div>
+              {/* Position */}
+              <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-5 mb-8">
+                <div className="flex items-start gap-3">
+                  <School className="w-5 h-5 text-gray-700 dark:text-gray-300 mt-1" />
                   <div>
-                    <p className="text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-1">
+                    <p className="text-sm text-gray-500">
                       July 2025 – Present
                     </p>
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                    <h3 className="font-semibold text-gray-900 dark:text-white">
                       Assistant Professor
                     </h3>
-                  </div>
-                </div>
-                <div className="pl-13 space-y-2 ml-1">
-                  <p className="text-gray-700 dark:text-gray-300 font-medium">
-                    Department of Computer Science
-                  </p>
-                  <p className="text-gray-700 dark:text-gray-300 font-medium">
-                    Trent University
-                  </p>
-                  <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400 text-sm mt-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Oshawa, Ontario, Canada</span>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                      Department of Computer Science
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                      Trent University
+                    </p>
+                    <p className="text-sm text-gray-500 flex items-center gap-1 mt-1">
+                      <MapPin className="w-4 h-4" />
+                      Oshawa, Ontario, Canada
+                    </p>
                   </div>
                 </div>
               </div>
 
-              {/* CV / Document Buttons */}
               <DocumentButtons />
             </motion.div>
 
-            {/* ── RIGHT COLUMN: Stats + Expertise ── */}
+            {/* ───────── RIGHT COLUMN ───────── */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
+              transition={{ duration: 0.7 }}
               viewport={{ once: true }}
-              className="lg:w-3/5 space-y-12"
+              className="lg:w-3/5 space-y-10"
             >
+
               {/* Stats */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {stats.map((stat, index) => (
-                  <motion.div
+                  <div
                     key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-4 text-center flex flex-col items-center hover:shadow-lg transition-shadow duration-300"
+                    className="border border-gray-200 dark:border-gray-700 rounded-md p-4 text-center"
                   >
-                    <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-2">
-                      <stat.icon className="w-5 h-5 text-white" />
-                    </div>
-                    <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                    <div className="text-xl font-semibold text-gray-900 dark:text-white">
                       {stat.value}
                     </div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400 font-medium mt-0.5">
+                    <div className="text-xs text-gray-500 mt-1">
                       {stat.label}
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 
-              {/* Key Achievements */}
+              {/* Achievements */}
               <div>
-                <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-                  <span className="w-1 h-6 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full inline-block" />
-                  Key Achievements
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  Research Highlights
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+                <div className="space-y-4">
                   {achievements.map((item, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.4, delay: index * 0.1 }}
-                      viewport={{ once: true }}
-                      className="p-5 bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                    >
-                      <div className="inline-block p-2.5 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg mb-3">
-                        <item.icon className="w-5 h-5 text-white" />
-                      </div>
-                      <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">
+                    <div key={index} className="border-l-2 border-gray-300 pl-4">
+                      <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+                      <p className="text-sm text-gray-600 dark:text-gray-300">
                         {item.description}
                       </p>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </div>
 
-              {/* Areas of Expertise */}
+              {/* Expertise */}
               <div>
-                <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-                  <span className="w-1 h-6 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full inline-block" />
+                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   Areas of Expertise
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                <div className="space-y-6">
                   {expertise.map((item, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.4, delay: index * 0.1 }}
-                      viewport={{ once: true }}
-                      className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 dark:border-gray-700"
-                    >
-                      <div className="inline-block p-3 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl mb-4">
-                        <item.icon className="w-6 h-6 text-white" />
-                      </div>
-                      <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">
+                    <div key={index}>
+                      <h3 className="text-md font-semibold text-gray-900 dark:text-white">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+
+                      <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 mb-2">
                         {item.description}
                       </p>
-                      <ul className="space-y-1.5">
-                        {item.achievements.map((achievement, i) => (
-                          <li
-                            key={i}
-                            className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-300"
-                          >
-                            <span className="w-1.5 h-1.5 bg-blue-500 rounded-full shrink-0" />
-                            {achievement}
-                          </li>
+
+                      <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300">
+                        {item.achievements.map((a, i) => (
+                          <li key={i}>{a}</li>
                         ))}
                       </ul>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </div>
 
             </motion.div>
+
           </div>
         </div>
       </section>
