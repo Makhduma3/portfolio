@@ -94,8 +94,7 @@ export default function About() {
     {
       year: 'July 2025 - Present',
       title: 'Assistant Professor',
-      description: `Department of Computer Science, Trent University \n Oshawa, Ontario, ON,
-
+      description: `Department of Computer Science, Trent University \n Oshawa, Ontario, ON`,
       achievements: [
         // 'Developed novel defence mechanisms',
         // 'Published in top-tier journals',
