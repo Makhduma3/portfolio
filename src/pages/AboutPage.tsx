@@ -72,7 +72,7 @@ export default function About() {
 
                 {/* Bio */}
                 <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed text-center mb-5">
-                  My research focuses on AI-driven cybersecurity, particularly in IoT and
+                  My research focuses on AI-based cybersecurity, particularly in IoT and
                   distributed systems. I work on intent-aware detection, federated learning,
                   and lightweight LLM-based reasoning to design scalable and practical
                   defence systems.
@@ -87,11 +87,11 @@ export default function About() {
                     <School className="w-4 h-4 text-gray-500 dark:text-gray-400" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-400 dark:text-gray-500">July 2025 – Present</p>
+                    
                     <p className="text-sm font-medium text-gray-900 dark:text-white">Trent University</p>
                     <p className="text-xs text-gray-400 dark:text-gray-500 flex items-center gap-1 mt-0.5">
                       <MapPin className="w-3 h-3" />
-                      Peterborough, Canada
+                      Oshawa, Canada
                     </p>
                   </div>
                 </div>
