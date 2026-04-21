@@ -87,7 +87,7 @@ export default function About() {
                 {/* PROFILE IMAGE */}
                 <div className="flex justify-center mb-6">
                   <img
-                    src={`${import.meta.env.BASE_URL}website-pic.jpg`}
+                    src={`${import.meta.env.BASE_URL}MakhdumaF.JPG`}
                     alt="Makhduma Saiyed"
                     className="w-40 h-40 object-cover rounded-xl border border-gray-200 shadow-sm"
                   />
