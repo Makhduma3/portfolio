@@ -142,7 +142,7 @@ export default function About() {
               className="lg:w-3/5 space-y-12"
             >
 
-              {/* 1. Areas of Expertise FIRST */}
+              {/* Areas of Expertise */}
               <div>
                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   Areas of Expertise
@@ -169,27 +169,21 @@ export default function About() {
                 </div>
               </div>
 
-              {/* 2. Stats LAST */}
-              <div>
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                  Summary
-                </h2>
-
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                  {stats.map((stat, index) => (
-                    <div
-                      key={index}
-                      className="border border-gray-200 dark:border-gray-700 rounded-md p-4 text-center"
-                    >
-                      <div className="text-xl font-semibold text-gray-900 dark:text-white">
-                        {stat.value}
-                      </div>
-                      <div className="text-xs text-gray-500 mt-1">
-                        {stat.label}
-                      </div>
+              {/* Stats ONLY (no heading) */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                {stats.map((stat, index) => (
+                  <div
+                    key={index}
+                    className="border border-gray-200 dark:border-gray-700 rounded-md p-4 text-center"
+                  >
+                    <div className="text-xl font-semibold text-gray-900 dark:text-white">
+                      {stat.value}
                     </div>
-                  ))}
-                </div>
+                    <div className="text-xs text-gray-500 mt-1">
+                      {stat.label}
+                    </div>
+                  </div>
+                ))}
               </div>
 
             </motion.div>
