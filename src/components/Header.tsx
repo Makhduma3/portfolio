@@ -28,7 +28,7 @@ export default function Header({ isDark, toggleDarkMode }: HeaderProps) {
   }, []);
 
   const menuItems = [
-    { label: 'Home', href: '/about' },
+    { label: 'Home', href: '/home' },
     { label: 'Experience', href: '/experience' },
     { label: 'Research', href: '/research' },
     { label: 'Publications', href: '/publications' },
