@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
 import ExperiencePage from './pages/ExperiencePage';
 import ResearchPage from './pages/ResearchPage';
@@ -52,15 +51,14 @@ function App() {
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
         <Header isDark={isDark} toggleDarkMode={toggleDarkMode} />
         <Routes>
-          
           <Route path="/" element={<AboutPage />} />
-          <Route path="/portfolio" element={<AboutPage />} />
           <Route path="/experience" element={<ExperiencePage experiences={data.experience} />} />
           <Route path="/research" element={<ResearchPage projects={data.research_projects} />} />
           <Route path="/publications" element={<PublicationsPage publications={data.research_publications} />} />
           <Route path="/awards" element={<AwardsPage awards={data.funding_and_awards} />} />
           <Route path="/education" element={<EducationPage education={data.educational_qualification} />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </Router>
