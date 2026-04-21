@@ -29,11 +29,12 @@ export default function Header({ isDark, toggleDarkMode }: HeaderProps) {
 
   const menuItems = [
     { label: 'Home', href: '/about' },
-    { label: 'Experience', href: '/experience' },
+    { label: 'Education', href: '/education' },
     { label: 'Research', href: '/research' },
     { label: 'Publications', href: '/publications' },
+     { label: 'Experience', href: '/experience' },
     { label: 'Awards', href: '/awards' },
-    { label: 'Education', href: '/education' },
+  
     { label: 'Contact', href: '/contact' },
   ];
 
