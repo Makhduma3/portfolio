@@ -96,7 +96,7 @@ export default function About() {
                 {/* NAME */}
                 <div className="text-center mb-6">
                   <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    Dr. Makhduma Saiyed
+                    Makhdumabanu Saiyed
                   </h1>
 
                   <p className="text-gray-600 dark:text-gray-300 mt-1">
@@ -113,7 +113,7 @@ export default function About() {
                   My research focuses on AI-driven cybersecurity, particularly
                   in IoT and distributed systems. I work on intent-aware
                   detection, federated learning, and lightweight LLM-based
-                  reasoning to design scalable and practical defense systems.
+                  reasoning to design scalable and practical defence systems.
                 </p>
 
                 {/* POSITION */}
